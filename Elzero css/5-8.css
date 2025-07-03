@@ -22,7 +22,7 @@
     width: 400px;
     height: 400px;
     margin: 20px;
-    background-image: url("css-assignment-5-8.png");
+    background-image: url("source/css-assignment-5-8.png");
 }
 
 .assign-2-shape-1{
@@ -43,7 +43,7 @@
     height: 400px;
     margin: 20px;
     background-color: #8A2BE2;
-    background-image: url("css-assignment-5-8.png");
+    background-image: url("source/css-assignment-5-8.png");
 }
 
 .assign-3-shape-1{
@@ -62,7 +62,7 @@
     width: 400px;
     height: 400px;
     margin: 20px;
-    background-image: url("css-assignment-5-8.png");
+    background-image: url("source/css-assignment-5-8.png");
     background-color: red;
 }
 
