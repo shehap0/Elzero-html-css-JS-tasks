@@ -1,0 +1,49 @@
+.task-1{
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.task-1 p {
+    padding: inherit;
+    margin: inherit;
+
+    border: 2px solid;
+    border-color: inherit;
+    border-radius: inherit;
+}
+
+.task-2{
+    padding: 20px;
+    margin: 10px;
+    background-color: lightblue;
+    border: 2px solid red;
+    border-radius: 50px;
+}
+.task-2 .p1{
+    font-family: 'open sans',sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.task-2 .p2{
+    font-family: 'cairo',sans-serif;
+    font-weight: 700;
+}
+.task-2 .p3{
+    font-family: 'Jomhuria',cursive;
+    font-weight: 400;
+}
+
+.p1, .p2,.p3{
+    font-weight: bold;
+}
+.task-3 .p1{
+    font-size: 2.5rem;
+}
+.task-3 .p2{
+    font-size: 2rem;
+}
+.task-3 .p3{
+    font-size: 1.5rem;
+}

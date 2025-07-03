@@ -1,0 +1,22 @@
+.parent .child .title{
+    color: red;
+}
+.parent .title{
+    color: blue;
+}
+.parent p{
+    color: green;
+}
+
+body .title{
+    color: orange;
+}
+
+.content div{
+    padding: 10px;
+    background-color: red ;
+    width: fit-content;
+    max-width: 400px;
+    height: 30px;
+    overflow: hidden;
+}

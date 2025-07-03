@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="test from" />
+    <link rel="style sheet" href="" />
+    <script></script>
+    <title>form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Lego</h1>
+      <ul>
+        <li>home</li>
+        <li>books</li>
+        <li>support</li>
+        <li>about us</li>
+      </ul>
+    </header>
+    <main>
+      <!-- Token, Email, Username -->
+      <form>
+        <div class="username">
+          <label>username</label>
+          <input
+            type="text"
+            required
+            placeholder="username"
+            autofocus
+            minlength="5"
+            maxlength="20"
+            name="user"
+          />
+        </div>
+        <div class="email">
+          <label>email</label>
+          <input
+            type="email"
+            required
+            placeholder="email"
+            value="o@o.com"
+            readonly
+            name="email"
+          />
+        </div>
+        <div class="token">
+          <input type="text" hidden value="b92f1fc2fce391ad7af633723afd3055" name="token" />
+        </div>
+
+        <div class="checkbox">
+          <input id="1" type="checkbox" checked > <label for="1">problem solving</label><br>
+          <input id="2" type="checkbox"><label for="2">planning</label><br>
+          <input id="3" type="checkbox"><label for="3">analyzing</label><br>
+          <input id="4" type="checkbox"><label for="4">advanced search</label><br>
+          <input id="5" type="checkbox"><label for="5">deep learning</label><br>
+        </div>
+        <hr>
+
+        <div class="radio">
+          <div>
+          <input id="1b" type="radio" name="job" value="front end">
+          <label for="1b">front end</label><br>
+          </div>
+          <div>
+          <input id="2b" type="radio" name="job" value="back end">
+          <label for="2b">back end</label><br>
+          </div>
+          <div>
+          <input id="3b" type="radio" name="job" value="cloud engineering">
+          <label for="3b">cloud engineering</label><br>
+          </div>
+          <div>
+          <input id="4b" type="radio" name="job" value="software engineering">
+          <label for="4b">software engineering</label><br>
+          </div>
+        </div>
+
+        <div class="choose">
+          <label>choose a role:</label>
+          <select>
+            <option value="React">React</option>
+            <option value="next.js">next.js</option>
+            <option value="python">python</option>
+            <option value="typescript">typescript</option>
+            <option value="oop">oop</option>
+          </select>
+        </div>
+
+        <hr>
+        <div>
+          <textarea placeholder="type what makes you the perfect for this job"></textarea>
+        </div>
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+      <!-- the rest of this shit is unusable since we will learn javascript in the future -->
+    </main>
+    <footer>@2025.copyrights</footer>
+  </body>
+</html>

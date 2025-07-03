@@ -1,0 +1,94 @@
+.container{
+    background-color: antiquewhite;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 1000px;
+}
+.one{
+    background-color: aliceblue;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 15px;
+    width: calc(100% - 30px);
+}
+
+/* 
+
+*/
+
+.two{
+    background-color: aquamarine;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: calc((100% - 68px) / 3);
+}
+/* 
+page 100% width
+2 spaces(left,right) 15px padding -> 2*15 = 30px
+30*3(each element) = 90px
++ 2 spaces between the 3 elements default 4px (each)
+=98px
+(100% - 98px) / 3
+
+    !!!!!! the mistake i made was that i counted the padding of the container
+    this only if i used padding
+*/
+
+/* 
+    4 spaces(left,right) 15px margin -> 4*15 = 60px
+
+*/
+.three{
+    background-color: blueviolet;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: calc((100% - 49px) / 2);
+}
+/* 
+2 spaces(left,right) 15px padding -> 2*15 = 30px
+30*2(each element) = 60px
+1 space between the 2 elements default 4px (each)
+=64px
+(100% - 64px) / 2
+*/
+
+.four{
+    background-color: darkseagreen;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: calc((100% - 87px) / 4);
+}
+
+
+
+.normal, .on, .tw {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: rgb(179, 179, 179); /* Get The Background From Image */
+  color: black;
+}
+
+.on{
+    background-color: rgb(179, 179, 179 , 0.1); /* Get The Background From Image */
+}
+
+.tw{
+    opacity: 0.1;
+}
