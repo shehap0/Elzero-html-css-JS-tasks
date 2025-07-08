@@ -1,0 +1,53 @@
+.task-1{
+    background-color: #f2f2f4;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    transition-duration: 0.5s;
+
+}
+.inner-box{
+    background-color: #dededc;
+    width: 300px;
+    height: 20px;
+    padding: 20px;
+    margin: 10px auto;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+.task-1:hover{
+    margin-top: 10px;
+}
+.task-1:hover .inner-box{
+    margin-top: 50px;
+}
+
+.task-2 div{
+    font-size: 20px !important;
+    background-color: #eeeeee !important;
+    color: transparent !important;
+    border: transparent !important;
+    margin: 10px auto;
+    width: 400px;
+    box-sizing: border-box;
+    padding-left: 90px !important;
+}
+.task-2 div::after{
+    content: "Elzero";
+    color: black;
+}
+
+
+:root{
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+
+.task-3 div{
+    color: var(--mainColor, red);
+    border: var(--mainColor, black) solid 2px;
+    padding: 20px;
+    margin: 10px;
+}
