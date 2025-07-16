@@ -1,6 +1,6 @@
 # Elzero Web School Practice
 
-This repository contains my solutions and practice projects while learning HTML and CSS, primarily from [Elzero Web School](https://elzero.org/).
+This repository contains my solutions and practice projects while learning HTML and CSS, primarily from [Elzero Web School]([https://elzero.org/](https://www.youtube.com/watch?v=qfPUMV9J5yw&list=PLDoPjvoNmBAzhFD3niPAa1C1gXG4cs14J)).
 
 ## Contents
 - Basic HTML Elements
@@ -10,7 +10,7 @@ This repository contains my solutions and practice projects while learning HTML 
 - Notes and Experiments
 
 ## Purpose
-To practice and track my progress as I become a frontend developer.
+To practice and track my progress.
 
 ## Status
 🟢 Actively Learning
