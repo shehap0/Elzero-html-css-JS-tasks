@@ -42,43 +42,135 @@
 }
 
 .task-3 .parent{
+    margin: 10px auto;
+    display: flex;
+    background-color: #eeeeee;
     width: 600px;
     height: 300px;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #eeeeee;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .task-3 .parent div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #607d8b;
     color: white;
-    height: calc(100%/2);
     width: calc(95%/3);
+    height: calc(95%/2);
+}
+
+.task-3 .parent .one{
+    order: 6;
+    
+    height: 50px !important; 
+}
+.task-3 .parent .two{
+    order: 4;
+}
+.task-3 .parent .three{
+    order: 3;
+    height: 50px !important; 
+}
+.task-3 .parent .four{
+    order: 5;
+}
+.task-3 .parent .five{
+    order: 2;
+}
+.task-3 .parent .six{
+    order: 1;
+}
+
+.task-4 .parent{
+    margin: 10px auto;
+    display: flex;
+    background-color: #eeeeee;
+    width: 600px;
+    height: 300px;
+    flex-direction: column;
+    padding: 10px;
+}
+.task-4 .parent div{
+    background-color: #009688;
+    color: white;
+    height: calc(95%/3);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.one{
-    order: 6;
+.task-4 .parent .one{
     align-self: flex-end;
-    height: 10px;
+    width: 40px;
 }
-.two{
-    order: 4;
+.task-4 .parent .two{
+    align-self: flex-start;
+    width: 300px;
 }
-.three{
-    order: 3;
-    height: 50px !important;
+.task-4 .parent .three{
+    align-self: flex-end;
+    width: 40px;
 }
-.four{
-    order: 5;
+
+.task-5{
+    width: 600px;
+    height: 300px;
+    background-color: #eeeeee;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 200px;
+    padding: 20px;
 }
-.five{
-    order: 2;
+
+.task-5 div{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: calc(100% /2);
 }
-.six{
-    order: 1;
+.task-5 .one{
+    margin-left: 150px;
+    background-color: #ff9800;
+}
+.task-5 .two{
+    background-color: #795548;
+}
+.task-5 .three{
+    background-color: #673ab7;
+}
+.task-5 .four{
+    background-color: #8bc34a;
+}
+
+
+
+
+.task-6{
+    margin: 10px auto;
+    width: 600px;
+    height: 300px;
+    background-color: #eeeeee;
+    padding: 10px;
+    row-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #ddd;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.links div, .content div{
+    display: inline-block;
+}
+.footer p{
+    display: inline;
 }
