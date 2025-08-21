@@ -1,0 +1,116 @@
+.task-1{
+    margin:10px auto ;
+    width: 300px;
+    height: 200px;
+}
+.task-1 .Elzero{
+    text-align: center;
+    line-height: 200px;
+    color: blue;
+    position: absolute;
+    margin-left: 100px;
+    z-index: 5;
+}
+.task-1 .one{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 50px;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+.task-1 .two{
+    background-color: #eeeeee;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 50px;
+    z-index: 3;
+}
+.task-1 .three{
+    background-color: #1e96f4;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 50px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+
+.task-2{
+    margin: 30px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
+.task-2 .Elzero{
+    text-align: center;
+    line-height: 200px;
+    font-size: 25px;
+}
+.task-2 .Elzero::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: red 10px solid;
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-left-color: transparent;
+}
+.task-2 .Elzero::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: #1e96f4 10px solid;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    border-right-color: transparent;
+}
+.task-2 .Elzero:hover::before {
+    transform: rotate(540deg);
+    -webkit-transform: rotate(540deg);
+    -moz-transform: rotate(540deg);
+    -ms-transform: rotate(540deg);
+    -o-transform: rotate(540deg);
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+}
+.task-2 .Elzero:hover::after {
+    transform: rotate(-540deg);
+    -webkit-transform: rotate(-540deg);
+    -moz-transform: rotate(-540deg);
+    -ms-transform: rotate(-540deg);
+    -o-transform: rotate(-540deg);
+    transition: transform 1.3s ease 0.8s;
+    -webkit-transition: transform 1.3s ease 0.8s;
+    -moz-transition: transform 1.3s ease 0.8s;
+    -ms-transition: transform 1.3s ease 0.8s;
+    -o-transition: transform 1.3s ease 0.8s;
+}
