@@ -114,3 +114,11 @@
     -ms-transition: transform 1.3s ease 0.8s;
     -o-transition: transform 1.3s ease 0.8s;
 }
+.task-2 .Elzero::before,
+.task-2 .Elzero::after {
+    transition: transform 1s eased;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+}
