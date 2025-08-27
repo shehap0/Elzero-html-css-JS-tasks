@@ -1,13 +1,12 @@
-# Elzero Web School Practice
+# Elzero Web School tasks
 
 This repository contains my solutions and practice projects while learning HTML and CSS, primarily from [Elzero Web School](https://elzero.org/).
 
 ## Contents
 - Basic HTML Elements
 - CSS Styling & Layout
-- Mini Projects
-- Assignments from Elzero
-- Notes and Experiments
+- Mini Projects (challenge)
+- tasks from Elzero
 
 ## Purpose
 To practice and track my progress.
