@@ -1,0 +1,100 @@
+.container{
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}   
+.E, .L{
+    display: grid;
+    grid-template-columns:repeat(4, 30px); ;
+    grid-template-rows: repeat(7, 30px);
+    position: relative;
+}
+.E div, .L div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /* border: 10px solid pink; */
+}
+.E div:nth-of-type(6), .E div:nth-of-type(13){
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: white;
+}
+.L div:nth-of-type(2){
+    grid-column: span 3;
+    grid-row: span 6;
+    background-color: white;
+}
+@keyframes shape-1{
+    0%{
+        transform: translate(0,0);
+    }
+    10%{
+        transform: translate(-90px,0);
+    }
+    20%{
+        transform: translate(-90px,90px);
+    }
+    30%{
+        transform: translate(0px,90px);
+    }
+    40%{
+        transform: translate(-90px,90px);
+    }
+    50%{
+        transform: translate(-90px,180px);
+    }
+    60%{
+        transform: translate(0px,180px);
+    }
+    70%{
+        transform: translate(-90px,180px);
+    }
+    80%{
+        transform: translate(-90px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes shape-2{
+    0%{
+        transform: translate(0px,0px);
+    }
+    30%{
+        transform: translate(-90px,0);
+    }
+    60%{
+        transform: translate(-90px,-180px);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-90px,-180px);
+    }
+}
+.E span{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    animation-name: shape-1;
+    animation-duration: 5s;
+    right: 0;
+    margin: 5px;
+    animation-delay: 2s;
+}
+.L span{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    animation-name: shape-2;
+    animation-duration: 2s;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+    animation-fill-mode: forwards;
+}
