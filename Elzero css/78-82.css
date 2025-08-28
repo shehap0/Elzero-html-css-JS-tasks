@@ -1,0 +1,31 @@
+.task-1 div.main.red{
+    color: red;
+}
+
+.task-2 .parent .child:nth-child(2){
+    color: red;
+}
+
+.task-3 .parent .baby:only-child{
+    color: red;
+}
+
+.task-4 > div[title]:nth-of-type(-n+5){
+    color: red;
+}
+
+.task-5 > div:nth-of-type(2) div[title]{
+    color: red;
+}
+
+.task-6 div:not(.no-need) > div:nth-last-of-type(2){
+    color: red;
+}
+
+.task-7 > div:first-child div:nth-of-type(2){
+    color: red;
+}
+
+.task-8 div >:not(:first-child, h3, :last-child){
+    color: red;
+}
