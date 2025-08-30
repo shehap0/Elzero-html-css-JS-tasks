@@ -1,4 +1,4 @@
-# Elzero Web School HTML, CSS Tasks
+# Elzero Web School HTML, CSS, JS Tasks
 
 This repository contains my solutions and practice projects while learning HTML and CSS, primarily from [Elzero Web School](https://elzero.org/).
 
