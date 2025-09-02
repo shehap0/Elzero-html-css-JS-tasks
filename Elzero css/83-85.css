@@ -1,0 +1,102 @@
+:root{
+
+}
+.container-1 , .container-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.container-1 div, .container-2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100% ;
+    height: 100%;
+    background-color: #eeeeee;
+    color: black;
+}
+.product-num{
+    font-weight: bold;
+}
+/* phones */
+@media (min-width: 400px){
+    .container-1 div .product-num{
+        color: black;
+    }
+    .container-1 div{
+        width: 100% ;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px){
+    .container-1 div .product-num{
+        color: red;
+    }
+    .container-1 div{
+        width: 40% ;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 900px){
+    .container-1 div .product-num{
+        color: #009688;
+    }
+    .container-1 div{
+        width: 20% ;
+    }
+}
+
+
+
+
+
+/* phones */
+@media (min-width: 400px){
+    .container-2 div .product-num{
+        color: black;
+    }
+    .container-2 div:nth-of-type(1){
+        width: 100% ;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px){
+    .container-2 div .product-num{
+        color: red;
+    }
+    .container-2 div{
+        width: 30% ;
+    }
+    .container-2 div:nth-of-type(1){
+        width: 100% ;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 900px){
+    .container-2 div .product-num{
+        color: #009688;
+    }
+    .container-2 div:nth-of-type(1), .container-2 div:nth-of-type(4){
+        width: 100% ;
+    }
+    .container-2 div:nth-of-type(2),.container-2 div:nth-of-type(3){
+        width: calc(50% - 10px);
+    }
+}
+
+
+
+
+/* print */
+@media print{
+    .assign-one{
+        font-size: 40px;
+    }
+}
