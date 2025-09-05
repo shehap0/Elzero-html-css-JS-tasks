@@ -19,10 +19,11 @@
     height: 200px;
     border-radius: 50%;
 }
-
+:root{
+    --width-height: 20px;
+}
 .task-2{
     margin: 20px;
-    position: relative;
     width: 200px;
     height: 200px;
 }
@@ -34,46 +35,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .top::after{
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: var( --width-height );
+    height: var( --width-height );
     background-color: #eee;
-    z-index: -1;
-    top: -9px;
-    rotate: 45deg;
+    z-index: -1;  
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 .right::after{
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: var( --width-height );
+    height: var( --width-height );
     background-color: #eee;
-    z-index: -1;
-    top: 70px;
-    right: -20px;
-    rotate: 45deg;
+    z-index: -1;  
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 .left::after{
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: var( --width-height );
+    height: var( --width-height );
     background-color: #eee;
     z-index: -1;
-    top: 130px;
+    top: 50%;
     left: 0;
-    rotate: 45deg;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 .bottom::after{
     content: '';
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: var( --width-height );
+    height: var( --width-height );
     background-color: #eee;
     z-index: -1;
-    top: 210px;
-    rotate: 45deg;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
