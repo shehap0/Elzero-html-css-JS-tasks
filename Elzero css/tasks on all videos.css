@@ -241,3 +241,53 @@
   background-color: #ddd;
 }
 
+.task-12{
+    margin: 10px auto;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-evenly;
+}
+.task-12 div{
+    background-color: white;
+    margin-top: 25px;
+    padding: 50px 80px;
+    border-radius: 10px;
+    border: 2px #a49f9f solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.task-12 div button{
+    background-color: #2196f3;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+.task-12 div p{
+    color: #8c8a88;
+    text-transform: capitalize;
+}
+.task-12 div span:not(.first-word){
+    color: #2196f3;
+    font-size: 30px;
+    font-weight: bold;
+}
+.task-12 div p .first-word{
+    font-weight: bold;
+}
+.task-12 .box-2::before{
+    position: absolute;
+    content: 'Most Popular';
+    background-color: #2196f3;
+    color: white;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
