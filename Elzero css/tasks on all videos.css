@@ -112,6 +112,7 @@
     transform: translate(0,-20px) rotate(-135deg);
 }
 
+
 .task-6 a{
     text-decoration: none;
     color: black;
@@ -120,6 +121,7 @@
     color: red;
     font-weight: bold;
 }
+
 
 .task-7{
     margin: 10px auto;
@@ -143,6 +145,11 @@
 }
 .task-7 li:nth-of-type(4){
     background-color: #ddd;
+    width: 100%;
+    display: inline-block;
+}
+.task-7 li:nth-of-type(4) li{
+    width: 300px;
 }
 .task-7 ul>li::before{
     content: counter(main-counter);
@@ -158,8 +165,79 @@
 }
 .task-7 li:nth-of-type(4)::before{
     background-color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
 }
 .task-7 ul ul li::before{
     background-color: #009688;
     content: "4." counter(main-counter);
 }
+
+.task-8{
+    margin: 10px auto;
+    width: 500px;
+    background-color: #eee;
+}
+.task-8 a{
+    background-color: #2196f3;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+.task-8 a::before{
+    content: "Name: " attr(title) " | URL: " attr(href) ;
+}
+
+.task-9 .text{
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, red, orange);
+    color: transparent; 
+    background-clip: text; 
+    text-transform:capitalize;
+}
+
+.task-10{
+    background-color: #009688;
+    width: 90vw;
+    padding: 10px;
+}
+.task-10 .container{
+    margin: 10px auto;
+    width: 100%;
+    display: grid;
+    padding: 0;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8,1fr);
+    aspect-ratio: 1 / 1;
+    border: 2px black solid;
+}
+.task-10 .white{
+    background-color: white;
+}
+.task-10 .black{
+    background-color: black;   
+}
+
+.task-11{
+    background-color: #eee;
+    margin: 10px auto;
+}
+.task-11 table th,.task-11 table td{
+    border: 2px #ddd solid;
+    background-color: white;
+    padding: 20px 40px;
+    transition: all 0.3s ease-in-out;
+}
+.task-11 table td:hover{
+    border: 2px #2196f3 solid;
+    color: #2196f3;
+}
+.task-11 table tr:hover td{
+  background-color: #ddd;
+}
+
