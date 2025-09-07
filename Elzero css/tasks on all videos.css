@@ -291,3 +291,55 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.task-13 > div{
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 1px 1px 10px #545050;
+    transition: all 0.5s ease-in-out;
+}
+.task-13 > div:hover{
+    border: #2196f3 3px solid;
+}
+.task-13{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eee;
+}
+.task-13 label>span{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-right: 50px;
+}
+.task-13 p{
+    color: #8c8a88;
+}
+.task-13 .big-1{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.task-13 .big-2,.task-13>div .second-p .bold{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+/* if you use firefox there will be problem by using :has(), it's supported by default
+         you should type in the search bar about:config
+         and type layout.css.has-selector.enabled
+         then add it and make it value to true 
+
+.task-13>div:has(input[type="radio"]:checked){
+    border: 2px solid #2196f3;
+} 
+*/
+.task-13>div:has(input[type="radio"]:checked){
+    border: 2px solid #2196f3;
+} 
+
+
