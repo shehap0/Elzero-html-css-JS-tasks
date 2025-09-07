@@ -342,4 +342,126 @@
     border: 2px solid #2196f3;
 } 
 
+.task-14{
+    margin: 80px auto;
+    width: 600px;
+    height: 350px;
+    background-color: #cccccc;
+    border-radius: 20px;
+    padding: 0;
+    position: relative;
+}
+.task-14 .decoration{
+    background-color: #607d8b;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.task-14 .lens{
+    width: 270px;
+    height: 270px;
+    background-color: #ededed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+}
+.task-14 .lens .lens-1{
+    width: 220px;
+    height: 220px;
+    background-color: #cecece;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.task-14 .lens .lens-2{
+    width: 180px;
+    height: 180px;
+    background-color: #3e3e3e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.task-14 .lens .lens-3{
+    width: 120px;
+    height: 120px;
+    background-color: #358fb6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.task-14 .lens .lens-4{
+    width: 35px;
+    height: 35px;
+    background-color: #68b8db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%,-130%);
+    border-radius: 50%;
+}
+.task-14 .button{
+    position: absolute;
+    background-color: #607d8b;
+    top: -20px;
+    left: 5%;
+    width: 80px;
+    height: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.task-14 .button .button-1{
+    position: absolute;
+    background-color: red;
+    top: -3px;
+    left: 12%;
+    width: 60px;
+    height: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.task-14 .flash{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: #607d8b;
+    top: -24px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 30px 50px;
+    border-top-right-radius: 30px 50px;
+}
+.task-14 .flash-1{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #cccccc;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.task-14 .flash-2{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    background-color: #607d8b;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
 
