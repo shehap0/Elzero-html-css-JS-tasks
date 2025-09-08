@@ -465,3 +465,220 @@
 }
 
 
+.task-15 h2{
+    font-size: 70px;
+    color: white;
+    -webkit-text-stroke: 3px purple;
+}
+
+
+.task-16{
+    margin: 20px auto;
+    padding: 10px;
+    width: 750px;
+    background-color: #eeeeee;
+}
+.task-16 caption{
+    padding: 20px;
+    font-weight: bold;
+    background-color: #cccccc;
+    caption-side: bottom;
+}
+.task-16 td, .task-16 th{
+    background-color: white;
+    padding: 20px;
+}
+.task-16 tfoot td:not(:first-of-type){
+    background-color: #2196f3;
+    color: white;
+}
+.task-16 tfoot td:first-of-type{
+    background-color: yellow;
+    font-weight: bold;
+    padding-left: 32%;
+}
+.task-16 thead th{
+    background-color: #cccccc;
+}
+
+
+.task-18{
+    background-color: #eeeeee;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
+.task-18 li{
+    margin-bottom: 3px;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    counter-increment: myCounter 3;
+}
+.task-18 ul{
+    list-style: none;
+    padding: 0;
+    counter-reset: myCounter 10;
+}
+.task-18 li::before{
+    content: "("counter(myCounter)")";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9c27b0;
+    border-radius: 50%;
+    color: white;
+}
+.task-18 li:nth-child(even)::before{
+    background-color: red;
+}
+
+
+.task-19{
+    margin: 100px auto;
+    width: 400px;
+}
+.task-19 div{
+    padding: 30px;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow:
+    0 0 0 10px #cddc39,
+    0 0 0 20px #e91e63,
+    0 0 0 30px #9c27b0,
+    0 0 0 40px #4caf50,
+    0 0 0 50px #3f51b5,
+    0 0 0 60px #795548,
+    0 0 0 70px #ffc107,
+    0 0 0 80px #009688;
+}
+
+.task-20{
+    margin: 10px auto;
+    width: 300px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: -2;
+}
+.task-20 h1{
+    width: 180px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+.task-20 h1::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: red 5px solid;
+    position: absolute;
+    left: -18%;
+    top: 31%;
+}
+.task-20 h1::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: red 5px solid;
+    position: absolute;
+    left: 101%;
+    top: 31%;
+}
+.task-20::after{
+    content: '';
+    height: 70px;
+    width: 190px;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border-bottom: black 10px solid;
+}
+.task-20::before{
+    content: '';
+    height: 70px;
+    width: 170px;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+
+
+.example {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  /* Shorten Code in One Line */
+  margin: 10px 20px 15px 20px;
+}
+.task-21{
+  background-color: black;
+  background-image: url("../imgs/one.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  /* Shorten Code in One Line */
+  background: black url("") left top cover no-repeat;
+
+}
+.task-21 {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #000;
+  /* Shorten Code in One Line */
+  border: 1px solid #000;
+}
+.task-21{
+  top: 10px;
+  right: 20px;
+  bottom: 10px;
+  left: 20px;
+  /* Shorten Code in One Line */
+  inset: 10px 20px 10px 20px;
+}
+.task-21{
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 10%;
+  /* Shorten Code in One Line */
+  flex: 3 3 10%;
+}
+.task-21 {
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* Shorten Code in One Line */
+  flex-flow: column wrap;
+}
+
+
+.task-22{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
