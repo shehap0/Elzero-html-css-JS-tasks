@@ -679,6 +679,249 @@
 
 .task-22{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3,100px);
+    grid-template-areas: 
+    "box-1 box-2 box-3 box-3"
+    "box-1 box-4 box-5 box-6"
+    "box-7 box-4 box-8 box-8";
+    gap: 1em;;
+}
+.task-22 div {
+  background: lightblue;
+  border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.task-22 .box-1{
+    background: url("source/adolf\ rizzler.jpg") center/cover no-repeat;
+}
+.task-22 .box-2{
+    background: url("source/kaka_8.png") center/cover no-repeat;
+}
+.task-22 .box-3{
+    background: url("source/Inosuke.jpg") center/cover no-repeat;
+}
+.task-22 .box-4{
+    background: url("source/Kurabika.jpg") center/cover no-repeat;
+}
+.task-22 .box-5{
+    background: url("source/lego.jpg") center/cover no-repeat;
+}
+.task-22 .box-6{
+    background: url("source/the\ weeknd.jpg") center/cover no-repeat;
+}
+.task-22 .box-7{
+    background: url("source/allah\ akbar.jpg") center/cover no-repeat;
+}
+.task-22 .box-8{
+    background: url("source/dog.jpg") top/cover no-repeat;
+}
+
+
+
+.task-23{
+    margin: 10px auto;
+    width: fit-content;
+    background-color: #eee;
+}
+.task-23 .the-grid{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,50px);
+    grid-template-rows: repeat(14, 20px);
+    grid-template-areas: 
+    "box-1 box-1 box-2 box-3 box-3"
+    "box-1 box-1 box-2 box-3 box-3"
+    "box-1 box-1 box-4 box-4 box-4"
+    "box-1 box-1 box-4 box-4 box-4"
+    "box-5 box-5 box-4 box-4 box-4"
+    "box-5 box-5 box-4 box-4 box-4"
+    "box-6 box-6 box-6 box-6 box-7"
+    "box-6 box-6 box-6 box-6 box-7"
+    "box-8 box-9 box-9 box-9 box-10"
+    "box-8 box-9 box-9 box-9 box-11"
+    "box-8 box-9 box-9 box-9 box-12"
+    "box-13 box-13 box-13 box-13 box-13"
+    "box-14 box-14 box-15 box-15 box-15"
+    "box-16 box-17 box-18 box-19 box-20";
+    gap: 10px;
+}
+.task-23 .the-grid div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.task-24{
+    background-color: #eee;
+    width: fit-content;
+    padding: 20px;
+    margin: 10px auto;
+}
+.task-24 .container{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+.task-24 .container .header{
+    color: #8c8a88;
+    text-transform: capitalize;
+    padding: 0;
+    margin-bottom: 0;
+}
+.task-24 .container .num{
+    font-weight: bold;
+    color: black;
+    padding: 0;
+    margin-top: 0;
+}
+.task-24 .container .line{
+    position: relative;
+    background-color: #ddd;
+    width: 600px;
+    height: 5px;
+}
+.task-24 .container .line-1{
+    position: absolute;
+    width: 500px;
+    height: 5px;
+    background-color: #2196f3;
+}
+.task-24 .container .line-2{
+    position: absolute;
+    width: 350px;
+    height: 5px;
+    background-color: orange;
+}
+.task-24 .container .line-3{
+    position: absolute;
+    width: 450px;
+    height: 5px;
+    background-color: #4caf50;
+}
+.task-24 .container .pointer-1{
+    position: absolute;
+    top: -40px;
+    right: 80px;
+    width: 38px;
+    background-color: #2196f3;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+.task-24 .container .pointer-2{
+    position: absolute;
+    top: -40px;
+    right: 230px;
+    width: 38px;
+    background-color: orange;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+.task-24 .container .pointer-3{
+    position: absolute;
+    top: -40px;
+    right: 130px;
+    width: 38px;
+    background-color: #4caf50;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+.task-24 .container .pointer-1::after{
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 10px;
+    height: 10px;
+    rotate: 45deg;
+    background-color: #2196f3;
+}
+.task-24 .container .pointer-2::after{
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 10px;
+    height: 10px;
+    rotate: 45deg;
+    background-color: orange;
+}
+.task-24 .container .pointer-3::after{
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 10px;
+    height: 10px;
+    rotate: 45deg;
+    background-color: #4caf50;
+}
+
+
+.task-25{
+    background-color: #ddd;
+    margin: 10px auto;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+}
+.task-25 .container{
+    background-color: white;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 70px 200px;
+    grid-template-areas: 
+    "box-1 box-1"
+    "box-2 box-3";
+    border-radius: 20px;
+    margin: 10px auto;
+}
+.task-25 .container .box-1 h2{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+}
+.task-25 .container .box-1{
+    background-color: #2196f3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.task-25 .container .box-2{
+    padding: 15px;
+}
+
+.task-25 .container .box-2 button, .task-25 .container .box-3 button{
+    color: white;
+    background-color: #2196f3;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}
+.task-25 .container .box-2 label{
+    color: #8c8a88;
+    text-transform: capitalize;
+}
+.task-25 .container .box-3 label{
+    color: #8c8a88;
+    text-transform: capitalize;
+    display: block;
+    padding: 15px 0 0 60px;
+}
+.task-25 .container .box-2 input{
+    margin: 10px 0;
+    background-color: #eee;
+    border-color: #eee;
+    border-radius: 5px;
+    caret-color: #2196f3;
 }
