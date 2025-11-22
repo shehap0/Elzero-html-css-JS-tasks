@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>tasks from 1 to 9</title>
+    <script>
+      // Code One
+      document.getElementById("el").style.color = "red";
+      // we select the element by id and give it color red
+      // it will now work cuz the html is not loaded yet, thee is no elements to select
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+      //made the same thing as code one but its implement the code after the html code is loaded so it will work
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+      // will do the same thing as code 1 but it will work cuz the html is loaded before this script
+    </script>
+    <script src="1-9.js"></script>
+  </body>
+</html>
