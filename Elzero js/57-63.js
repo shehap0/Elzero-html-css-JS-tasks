@@ -60,19 +60,14 @@ function checkStatus(a, b, c){
     var Name;
     var age;
     var status;
-    if (typeof a === "string") Name = a;
-    else if (typeof b === "string") Name = b;
-    else Name = c;
-
+    // identify the name:
+    typeof a === "string" ? Name=a : typeof b === "string" ? Name=b : Name=c
+    
     // Identify the age:
-    if (typeof a === "number") age = a;
-    else if (typeof b === "number") age = b;
-    else age = c;
-
+    typeof a === "number" ? age=a : typeof b === "number" ? age=b : age=c
+    
     // Identify the status:
-    if (typeof a === "boolean") status = a;
-    else if (typeof b === "boolean") status = b;
-    else status = c;
+    typeof a === "boolean" ? status=a : typeof b === "boolean" ? status=b : status=c
 
     if(status===true){
         status=""
