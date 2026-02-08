@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        document.addEventListener("click", function(e){
+            let a = document.querySelectorAll("a")
+            for(i=0 ; i<a.length ; i++){
+                if(a[i].className==="open" && a[i].textContent.includes("Elzero")){
+                    // i don't know what elzero when by open it
+                    // window.open(a[i].href, '_blank');
+                    }
+            }
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading"></h1>
+        <p>Welcome to the JavaScript challenges section</p>
+        <ul class="task-list">
+            <li>Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+            <li>Task 4</li>
+            <li>Task 5</li>
+        </ul>
+    </div>
+    
+    <div class="task-1 container">
+        <a class="open" href="https://google.com">Google</a>
+        <a class="open" href="https://elzero.org">Elzero</a>
+        <a class="not" href="https://facebook.com">Facebook</a>
+        <a class="linked" href="https://linkedin.com">Elzero</a>
+    </div>
+
+    <div class="task-2 container">
+        <form action="">
+            <input class="add" type="text" name="add-class" placeholder="add classes">
+            <input class="remove" type="text" name="remove-class" placeholder="remove classes">
+            <div class="container">Current Elements</div>
+            <div class="classes container"><h4>Current Elements class list</h4>
+                <div class="class-list">
+                    <p>No Classes To Show</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="task-3 container">
+        <div class="our-element">Our Element</div>
+        <p>Paragraph</p>
+    </div>
+
+    <div class="task-4 container">
+        <span>Hello</span>
+        <!-- We Need The Next Text Without Spaces -->
+        Elzero
+    </div>
+
+    <div class="task-5">
+        <div>Element</div>
+        <span>Element</span>
+        <p>Element</p>
+        <article>Element</article>
+        <section>Element</section>
+    </div>
+
+    <script src="94-101.js"></script>
+</body>
+</html>
