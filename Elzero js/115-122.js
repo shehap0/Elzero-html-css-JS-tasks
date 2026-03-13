@@ -139,6 +139,13 @@ const {
   skills: [, s2]
 } = friend;
 
+// other version, maybe this the one Elzero wants.
+// const [
+//   { title: t1, age: a1, available: v1, skills: [, s21] },
+//   { title: t2, age: a2, available: v2, skills: [, s22] },
+//   { title: t3, age: a3, available: v3, skills: [, s23] }
+// ] = myFriends;
+
 // Display
 display(t, a, v, s2);
 
