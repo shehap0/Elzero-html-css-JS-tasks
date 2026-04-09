@@ -1,0 +1,24 @@
+name: Local Config
+version: 1.0.0
+schema: v1
+
+models:
+  - name: GLM-4.7-Flash (GPU Forced + Long Output)
+    provider: ollama
+    model: glm-4.7-flash:q4_K_M
+    apiBase: http://localhost:11434
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      temperature: 0.7
+      contextLength: 16384          # ← increased total context
+      maxTokens: 8192               # ← safe long output (you can go up to 12000 later)
+    requestOptions:
+      options:
+        num_gpu: 999
+        num_ctx: 16384                # ← must match contextLength
+        num_predict: -1               # unlimited output (model decides when to stop)
+        keep_alive: -1
+        num_thread: 0

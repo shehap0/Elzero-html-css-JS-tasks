@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "aritcleTitle": "rich dad and poor dad",
+        "aritcleSection": "finance",
+        "author":"someone",
+        "aritcleDescription": "book about finance and how to manage your money"
+    },
+    {
+        "id": "2",
+        "aritcleTitle": "the power of now",
+        "aritcleSection": "self development",
+        "author":"idk",
+        "aritcleDescription": "book about how to live in the present moment and how to let go of the past and future"
+    },
+    {
+        "id": "3",
+        "aritcleTitle": "the 7 habits of highly effective people",
+        "aritcleSection": "self development",
+        "author":"someone else",
+        "aritcleDescription": "book about how to be more effective in your personal and professional life"
+    },
+    {
+        "id": "4",
+        "aritcleTitle": "the alchemist",
+        "aritcleSection": "fiction",
+        "author":"another person",
+        "aritcleDescription": "book about a young shepherd who goes on a journey to find his personal legend"
+    },
+    {
+        "id": "5",
+        "aritcleTitle": "the art of war",
+        "aritcleSection": "strategy",
+        "author":"hitler",
+        "aritcleDescription": "book about military strategy and tactics"
+    }
+]
